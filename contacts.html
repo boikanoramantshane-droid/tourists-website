@@ -19,17 +19,52 @@
 
 	</header>
 
-	<nav>
-		<a href="index.html">Home</a>
-       	<a href="about.html">About</a>
-       	<a href="destinations.html">Destinations</a>
-       	<a href="product.html">Activities</a>
-       	<a href="gallary.html">Gallary</a>
-       	<a href="registrations.html">Booking</a>
-       	<a href="map.html">Map</a>
-        
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            Navigate Lesotho
+        </a>
+ <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+    </button>
 
-	</nav>
+        <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="destinations.html">Destinations</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="product.html">Activities</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="gallary.html">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="registration.html">Booking</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="map.html">Map</a>
+        </li>
+        </ul>
+    </div>
+       
+    </nav>
 
 	<main>
 		
@@ -45,72 +80,102 @@
 
 		<section class="section1">
 
+
+
 			<div class="container mt-3">
 
-  			<form>
 
-    			<div class="mb-3 mt-3">
+<form id="contactForm" novalidate>
 
-     				<label for="email">Email:</label>
-     			 	<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    <div class="mb-3">
+        <label for="name">Full Name:</label>
+        <input type="text" class="form-control"
+        id="name" placeholder="Enter your name" required>
+    </div>
 
-    		</div>
-   		 	<div class="mb-3">
+    <div class="mb-3">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control"
+        id="email" placeholder="Enter your email" required>
+    </div>
 
-      				<label for="pwd">Password:</label>
-      				<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    <div class="mb-3">
+        <label for="subject">Subject:</label>
+        <input type="text" class="form-control"
+        id="subject" placeholder="Enter subject" required>
+    </div>
 
-    		</div>
+    <div class="mb-3">
+        <label for="comment">Message:</label>
+        <textarea class="form-control" rows="5"
+        id="comment" placeholder="Write your message"
+        required></textarea>
+    </div>
 
-    		<div class="mb-3 mt-3">
-     			    <label for="comment">Comments:</label>
-      				<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-    		</div>
+    <button type="submit" class="btn btn-success">
+        Submit
+    </button>
 
-   			 <button type="submit" class="btn btn-primary">Submit</button>
- 		 </form>
-		</div>
+    <p id="message"></p>
+
+</form>
+
+	</div>
 
 
-		</section>
+</section>
 
-		<section class="section1">
+<section class="section1">
 			
-			<h2>Contact Information</h2>
+	<h2>Contact Information</h2>
 
-				<p>Email: info@touristlesotho.co.ls</p>
+	<p>Email: info@touristlesotho.co.ls</p>
 		</section>
+
+<script>
+	
+	
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let subject = document.getElementById("subject").value.trim();
+    let comment = document.getElementById("comment").value.trim();
+
+    let message = document.getElementById("message");
+
+    if (name === "" || email === "" || subject === "" || comment === "") {
+
+        message.innerHTML = "Please fill in all fields.";
+        message.style.color = "red";
+
+    }
+
+    else if (!document.getElementById("email").checkValidity()) {
+
+        message.innerHTML = "Please enter a valid email address.";
+        message.style.color = "red";
+
+    }
+
+    else {
+
+        message.innerHTML = "Thank you! Your message has been sent successfully.";
+        message.style.color = "green";
+
+        document.getElementById("contactForm").reset();
+
+    }
+
+});
+
+</script>
+
 	</main>
 	<footer class="footer">
 		<p>@2026 Explore Lesotho</p>
 	</footer>
-</body>
-
- <script>
-        function myFunction(){
-        	alert("Thank you! Your form has been completed successfully.");
-
-        	document.getElementById('one').style.BackgroundColor="green";
-        }
-
-
-        function myFun{
-        	alert("resent");
-        }
-    </script>
-
-
-
-
-</html>
-
-
-
-
-
-
-
-
-
 </body>
 </html>

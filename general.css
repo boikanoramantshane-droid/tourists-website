@@ -34,12 +34,16 @@
         margin-top: 150px;
     }
 
-    .article{
-        width: 65%;
-        height: 300px;
-        margin: 0;
-        background-color: whitesmoke;
-        color: darkslategray;
+
+       .article {
+    width: 65%;
+    height: auto;
+    min-height: 300px;
+    margin: 0;
+    padding: 20px;
+    background-color: whitesmoke;
+    color: darkslategray;
+}
        }
 
     .article h3{
@@ -113,10 +117,18 @@
     }
 
 
-    .corousel-item img{
+    .carousel-item img{
         height: 450px;
         object-fit: cover;
     }
+
+    .modal {
+    z-index: 1055;
+}
+
+.modal-backdrop {
+    z-index: 1050;
+}
 
 
 @media screen and (max-width: 768px) {

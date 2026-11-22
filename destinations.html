@@ -1,108 +1,359 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Destination</title>
-	<link rel="stylesheet" href="general.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Destinations</title>
+
+    <link rel="stylesheet" href="general.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 </head>
+
 <body>
 
-	<header class="header">
-		
-		<h2>Expore The Beautiful Destinations of Lesotho</h2>
-
-	</header>
-
-	
-
-	<main class="main">
-
-<nav class="nav">
-		
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
-		<a href="product.html">Activities</a>
-		<a href="gallary.html">Gallary</a>
-		<a href="registration.html">Bookings</a>
-		<a href="map.html">Map</a>
-		<a href="contacts.html">Contacts</a>
-
-	</nav>
+    <header class="header">
+        <h2>Explore The Beautiful Destinations of Lesotho</h2>
+    </header>
 
 
-	<article class="article">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
 
-		<h3>Maletsunyane Water Falls</h3>
+            <a class="navbar-brand" href="index.html">
+                Navigate Lesotho
+            </a>
 
-		<div class="content">
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-			<img src="waterfalls.jpeg" width="250px" height="250px">
+            <div class="collapse navbar-collapse" id="menu">
 
-			<p>Maletsunyane Falls is one of the most beautiful and famous natural attractions in Lesotho, located near Semonkong. The waterfall drops approximately 192 metres down a steep cliff, creating a breathtaking view. Visitors can enjoy sightseeing, photography, hiking and exciting activities such as abseiling. It is a perfect destination for tourists who love nature, adventure and beautiful scenery.</p>
-		</div>	
+            <ul class="navbar-nav ms-auto">
 
-		
-		
-	</article>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
 
-	<article class="article">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
 
-		<h3>Afriski Mountain Resort</h3>
+            <li class="nav-item">
+                <a class="nav-link" href="product.html">Activities</a>
+            </li>
 
-		<div class="content">
+            <li class="nav-item">
+                <a class="nav-link" href="gallary.html">Gallery</a>
+            </li>
 
-			<img src="afriski.jpeg" width="250px" height="250px">
+            <li class="nav-item">
+                <a class="nav-link" href="registration.html">Booking</a>
+            </li>
 
-			<p>Afriski Montain Resort is one one of the most exciting tourist destinations in Lesotho.Located in the beautiful Maluti Mountains at Mahalsela Pass, it is one of Africa's few ski resorts.Afriski is famous for its snowy winter season, where visitors can enjoy skiing, snowboarding and playing in the snow. During summer, tourists can enjoy outdoor activities such as mountain biking, hiking and exploring the breathtaking mountain scenery.</p>
+            <li class="nav-item">
+                <a class="nav-link" href="map.html">Map</a>
+            </li>
 
-		</div>
+            <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+            </li>
 
-	</article>
+            </ul>
 
-	<article class="article">
-
-		<h3>Ts'ehlanyane National Park</h3>
-
-		<div class="content">
-
-			<img src="nationalpark.jpeg" width="250px" height="250px">
-
-			<p>Ts'ehlanyane National Park is one of Lesotho's most beautiful natural attractions. Located in the northern part of the country, it is part of the Maloti-Drakensberg Transfrontier Conservation Area.
-			The park is famous for its beautiful mountains, green forests, rivers, waterfalls and unique plant life. It offers visitors a peaceful environment where they can enjoy nature and escape from busy city life.</p>
-
-		</div>	
-
-
-	</article>
-
-	<article class="article">
-
-		<h3>Katse Dam</h3>
-
-		<div class="content">
-
-
-			<img src="dam.jpeg" width="250px" height="250px">
-
-			<p>Katse Dam is one of the most impressive tourist attractions in Lesotho. Located in the Maluti Mountains, it is part of the Lesotho Highlands Water Project, which supplies water to South Africa and supports electricity generation in Lesotho.The dam is surrounded by beautiful mountains and offers breathtaking views of its large blue water reservoir. It is also an important engineering achievement and one of the largest dams in Africa.Visitors can enjoy sightseeing, photography, boat trips, fishing and guided tours of the dam, depending on availability.</p>
-
-		</div>
-	</article>
-
-</main>
+            </div>
+            </div>
+        </nav>
 
 
-	<div class="container">
+    <article class="article">
 
-	<a href="about.html">Previous</a>
-	<a href="product.html">Next</a>
+        <h3>Maletsunyane Water Falls</h3>
 
-</div>
+        <div class="content">
 
-<footer class="footer">
-@2026 Discover Lesotho
-</footer>
+            <img src="waterfalls.jpeg"
+                 alt="Maletsunyane Falls in Lesotho"
+                 width="250" height="250">
+
+            <p>
+                Maletsunyane Falls is one of the most beautiful and famous
+                natural attractions in Lesotho, located near Semonkong.
+                The waterfall drops approximately 192 metres down a steep
+                cliff, creating a breathtaking view. Visitors can enjoy
+                sightseeing, photography, hiking and exciting activities
+                such as abseiling. It is a perfect destination for tourists
+                who love nature, adventure and beautiful scenery.
+            </p>
+
+        </div>
+
+        <button type="button" class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#fallsModal">
+            Learn More
+        </button>
+
+    </article>
+
+    <article class="article">
+
+        <h3>Afriski Mountain Resort</h3>
+
+        <div class="content">
+
+            <img src="afriski.jpeg"
+                 alt="Afriski Mountain Resort in Lesotho"
+                 width="250" height="250">
+
+            <p>
+                Afriski Mountain Resort is one of the most exciting tourist
+                destinations in Lesotho. Located in the beautiful Maluti
+                Mountains at Mahlasela Pass, it is one of Africa's few ski
+                resorts. Afriski is famous for its snowy winter season,
+                where visitors can enjoy skiing, snowboarding and playing
+                in the snow. During summer, tourists can enjoy outdoor
+                activities such as mountain biking and hiking.
+            </p>
+
+        </div>
+
+        <button type="button" class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#afriskiModal">
+            Learn More
+        </button>
+
+    </article>
+
+    <article class="article">
+
+        <h3>Ts'ehlanyane National Park</h3>
+
+        <div class="content">
+
+            <img src="nationalpark.jpeg"
+                 alt="Ts'ehlanyane National Park in Lesotho"
+                 width="250" height="250">
+
+            <p>
+                Ts'ehlanyane National Park is one of Lesotho's most
+                beautiful natural attractions. Located in the northern
+                part of the country, it is part of the Maloti-Drakensberg
+                Transfrontier Conservation Area. The park is famous for
+                its beautiful mountains, green forests, rivers, waterfalls
+                and unique plant life. It offers visitors a peaceful
+                environment where they can enjoy nature.
+            </p>
+
+        </div>
+
+        <button type="button" class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#parkModal">
+            Learn More
+        </button>
+
+    </article>
+
+    <article class="article">
+
+        <h3>Katse Dam</h3>
+
+        <div class="content">
+
+            <img src="dam.jpeg"
+                 alt="Katse Dam in Lesotho"
+                 width="250" height="250">
+
+            <p>
+                Katse Dam is one of the most impressive tourist attractions
+                in Lesotho. Located in the Maluti Mountains, it is part of
+                the Lesotho Highlands Water Project, which supplies water
+                to South Africa and supports electricity generation in
+                Lesotho. The dam is surrounded by beautiful mountains and
+                offers breathtaking views of its large blue water reservoir.
+                Visitors can enjoy sightseeing, photography, fishing and
+                guided tours, depending on availability.
+            </p>
+
+        </div>
+
+        <button type="button" class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#katseModal">
+            Learn More
+        </button>
+
+    </article>
+
+    <div class="modal fade" id="fallsModal" tabindex="-1">
+
+        <div class="modal-dialog">
+
+        <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h5 class="modal-title">Maletsunyane Falls</h5>
+
+            <button type="button" class="btn-close"data-bs-dismiss="modal">Close</button>
+            </div>
+
+        <div class="modal-body">
+
+            <img src="waterfalls.jpeg"alt="Maletsunyane Falls"class="img-fluid mb-3">
+
+            <p>Maletsunyane Falls is located near Semonkongin Lesotho. It is approximately 192 metres highand is one of the highest single-drop waterfallsin Southern Africa.</p>
+
+                <p>Location:Semonkong, Lesotho</p>
+
+                <p>Activities: Hiking, sightseeing,photography and abseiling.</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary"data-bs-dismiss="modal"></button>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
+
+
+        <div class="modal fade" id="afriskiModal" tabindex="-1">
+
+        <div class="modal-dialog">
+
+        <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h5 class="modal-title">Afriski Mountain Resort</h5>
+
+            <button type="button" class="btn-close"data-bs-dismiss="modal"></button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <img src="afriski.jpeg"alt="Afriski Mountain Resort"class="img-fluid mb-3">
+
+            <p>Afriski is located in the Maluti Mountains at Mahlasela Pass. It is a popular destination for winter sports and mountain adventures.</p>
+
+            <p>Location: Mahlasela Pass, Lesotho</p>
+
+            <p>Activities: Skiing, snowboarding,hiking and mountain biking.</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="parkModal" tabindex="-1">
+
+        <div class="modal-dialog">
+
+        <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h5 class="modal-title">Ts'ehlanyane National Park</h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <img src="nationalpark.jpeg" alt="Ts'ehlanyane National Park" class="img-fluid mb-3">
+
+            <p>Ts'ehlanyane National Park is a protected natural area in northern Lesotho. It is known for its mountain scenery, indigenous forests, rivers and beautiful walking trails.</p>
+
+            <p>Location: Butha-Buthe District, Lesotho</p>
+
+            <p>Activities: Hiking, birdwatching, sightseeing and nature exploration.</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="katseModal" tabindex="-1">
+
+        <div class="modal-dialog">
+
+        <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h5 class="modal-title">Katse Dam</h5>
+
+            <button type="button" class="btn-close"data-bs-dismiss="modal"></button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <img src="dam.jpeg" alt="Katse Dam" class="img-fluid mb-3">
+
+            <p>Katse Dam is an important part of the Lesotho Highlands Water Project. It is surrounded by beautiful mountains and is an impressive engineering achievement.</p>
+
+            <p>Location: Bokong, Lesotho</p>
+
+            <p>Activities: Sightseeing,photography, fishing and guided tours,depending on availability.</p>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
+</article>
+
+    <div class="container my-4">
+
+        <a href="about.html">Previous</a>
+
+        <a href="product.html">Next</a>
+
+    </div>
+
+    <footer class="footer">
+        @2026 Discover Lesotho
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
